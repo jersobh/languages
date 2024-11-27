@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "code",
+        "name": "py.code",
         "sources": [
             "./py/code.pyx"
         ]
     },
-    "module_name": "code"
+    "module_name": "py.code"
 }
 END: Cython Metadata */
 
@@ -1229,8 +1229,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__code
-#define __PYX_HAVE_API__code
+#define __PYX_HAVE__py__code
+#define __PYX_HAVE_API__py__code
 /* Early includes */
 #include <string.h>
 #include <stdlib.h>
@@ -2069,14 +2069,14 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from "libc.stdlib" */
 
-/* Module declarations from "code" */
+/* Module declarations from "py.code" */
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "code"
-extern int __pyx_module_is_main_code;
-int __pyx_module_is_main_code = 0;
+#define __Pyx_MODULE_NAME "py.code"
+extern int __pyx_module_is_main_py__code;
+int __pyx_module_is_main_py__code = 0;
 
-/* Implementation of "code" */
+/* Implementation of "py.code" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_print;
@@ -2089,7 +2089,6 @@ static const char __pyx_k_u[] = "u";
 static const char __pyx_k__2[] = "*";
 static const char __pyx_k__5[] = "?";
 static const char __pyx_k_sys[] = "sys";
-static const char __pyx_k_code[] = "code";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_spec[] = "__spec__";
@@ -2099,6 +2098,7 @@ static const char __pyx_k_range[] = "range";
 static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_main_2[] = "main";
 static const char __pyx_k_random[] = "random";
+static const char __pyx_k_py_code[] = "py.code";
 static const char __pyx_k_randint[] = "randint";
 static const char __pyx_k_py_code_pyx[] = "py/code.pyx";
 static const char __pyx_k_initializing[] = "_initializing";
@@ -2106,7 +2106,7 @@ static const char __pyx_k_is_coroutine[] = "_is_coroutine";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_u); /* proto */
+static PyObject *__pyx_pf_2py_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_u); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2147,7 +2147,6 @@ typedef struct {
   PyObject *__pyx_n_s_a;
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_cline_in_traceback;
-  PyObject *__pyx_n_s_code;
   PyObject *__pyx_n_s_i;
   PyObject *__pyx_n_s_import;
   PyObject *__pyx_n_s_initializing;
@@ -2157,6 +2156,7 @@ typedef struct {
   PyObject *__pyx_n_s_main_2;
   PyObject *__pyx_n_s_name;
   PyObject *__pyx_n_s_print;
+  PyObject *__pyx_n_s_py_code;
   PyObject *__pyx_kp_s_py_code_pyx;
   PyObject *__pyx_n_s_r;
   PyObject *__pyx_n_s_randint;
@@ -2218,7 +2218,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_a);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
-  Py_CLEAR(clear_module_state->__pyx_n_s_code);
   Py_CLEAR(clear_module_state->__pyx_n_s_i);
   Py_CLEAR(clear_module_state->__pyx_n_s_import);
   Py_CLEAR(clear_module_state->__pyx_n_s_initializing);
@@ -2228,6 +2227,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_main_2);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
   Py_CLEAR(clear_module_state->__pyx_n_s_print);
+  Py_CLEAR(clear_module_state->__pyx_n_s_py_code);
   Py_CLEAR(clear_module_state->__pyx_kp_s_py_code_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_r);
   Py_CLEAR(clear_module_state->__pyx_n_s_randint);
@@ -2267,7 +2267,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_a);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
-  Py_VISIT(traverse_module_state->__pyx_n_s_code);
   Py_VISIT(traverse_module_state->__pyx_n_s_i);
   Py_VISIT(traverse_module_state->__pyx_n_s_import);
   Py_VISIT(traverse_module_state->__pyx_n_s_initializing);
@@ -2277,6 +2276,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_main_2);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
   Py_VISIT(traverse_module_state->__pyx_n_s_print);
+  Py_VISIT(traverse_module_state->__pyx_n_s_py_code);
   Py_VISIT(traverse_module_state->__pyx_kp_s_py_code_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_r);
   Py_VISIT(traverse_module_state->__pyx_n_s_randint);
@@ -2332,7 +2332,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_a __pyx_mstate_global->__pyx_n_s_a
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
-#define __pyx_n_s_code __pyx_mstate_global->__pyx_n_s_code
 #define __pyx_n_s_i __pyx_mstate_global->__pyx_n_s_i
 #define __pyx_n_s_import __pyx_mstate_global->__pyx_n_s_import
 #define __pyx_n_s_initializing __pyx_mstate_global->__pyx_n_s_initializing
@@ -2342,6 +2341,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_main_2 __pyx_mstate_global->__pyx_n_s_main_2
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
 #define __pyx_n_s_print __pyx_mstate_global->__pyx_n_s_print
+#define __pyx_n_s_py_code __pyx_mstate_global->__pyx_n_s_py_code
 #define __pyx_kp_s_py_code_pyx __pyx_mstate_global->__pyx_kp_s_py_code_pyx
 #define __pyx_n_s_r __pyx_mstate_global->__pyx_n_s_r
 #define __pyx_n_s_randint __pyx_mstate_global->__pyx_n_s_randint
@@ -2358,7 +2358,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_codeobj__4 __pyx_mstate_global->__pyx_codeobj__4
 /* #### Code section: module_code ### */
 
-/* "code.pyx":6
+/* "py/code.pyx":6
  * from libc.stdlib cimport malloc, free
  * 
  * @cython.boundscheck(False)  # Disable bounds checking for performance             # <<<<<<<<<<<<<<
@@ -2367,15 +2367,15 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4code_1main(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_2py_4code_1main(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_4code_1main = {"main", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4code_1main, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4code_1main(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_2py_4code_1main = {"main", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_2py_4code_1main, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_2py_4code_1main(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2445,11 +2445,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("code.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("py.code.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4code_main(__pyx_self, __pyx_v_u);
+  __pyx_r = __pyx_pf_2py_4code_main(__pyx_self, __pyx_v_u);
 
   /* function exit code */
   {
@@ -2462,7 +2462,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_u) {
+static PyObject *__pyx_pf_2py_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_u) {
   int __pyx_v_r;
   int *__pyx_v_a;
   int __pyx_v_i;
@@ -2479,7 +2479,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("main", 1);
 
-  /* "code.pyx":9
+  /* "py/code.pyx":9
  * @cython.wraparound(False)    # Disable wraparound for performance
  * def main(int u):
  *     cdef int r = random.randint(0, 10000)  # Get a random number 0 <= r < 10k             # <<<<<<<<<<<<<<
@@ -2498,7 +2498,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_r = __pyx_t_3;
 
-  /* "code.pyx":10
+  /* "py/code.pyx":10
  * def main(int u):
  *     cdef int r = random.randint(0, 10000)  # Get a random number 0 <= r < 10k
  *     cdef int* a = <int*>malloc(10000 * sizeof(int))  # Allocate memory for the array             # <<<<<<<<<<<<<<
@@ -2507,7 +2507,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
  */
   __pyx_v_a = ((int *)malloc((0x2710 * (sizeof(int)))));
 
-  /* "code.pyx":14
+  /* "py/code.pyx":14
  * 
  *     # Initialize the array to zero
  *     for i in range(10000):             # <<<<<<<<<<<<<<
@@ -2517,7 +2517,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   for (__pyx_t_3 = 0; __pyx_t_3 < 0x2710; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "code.pyx":15
+    /* "py/code.pyx":15
  *     # Initialize the array to zero
  *     for i in range(10000):
  *         a[i] = 0  # Set each element to 0             # <<<<<<<<<<<<<<
@@ -2527,7 +2527,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
     (__pyx_v_a[__pyx_v_i]) = 0;
   }
 
-  /* "code.pyx":17
+  /* "py/code.pyx":17
  *         a[i] = 0  # Set each element to 0
  * 
  *     for i in range(10000):                   # 10k outer loop iterations             # <<<<<<<<<<<<<<
@@ -2537,7 +2537,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   for (__pyx_t_3 = 0; __pyx_t_3 < 0x2710; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "code.pyx":18
+    /* "py/code.pyx":18
  * 
  *     for i in range(10000):                   # 10k outer loop iterations
  *         for j in range(100000):              # 100k inner loop iterations, per outer loop iteration             # <<<<<<<<<<<<<<
@@ -2547,7 +2547,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
     for (__pyx_t_4 = 0; __pyx_t_4 < 0x186A0; __pyx_t_4+=1) {
       __pyx_v_j = __pyx_t_4;
 
-      /* "code.pyx":19
+      /* "py/code.pyx":19
  *     for i in range(10000):                   # 10k outer loop iterations
  *         for j in range(100000):              # 100k inner loop iterations, per outer loop iteration
  *             a[i] += j % u                    # Simple sum             # <<<<<<<<<<<<<<
@@ -2562,7 +2562,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
       (__pyx_v_a[__pyx_t_5]) = ((__pyx_v_a[__pyx_t_5]) + __Pyx_mod_int(__pyx_v_j, __pyx_v_u));
     }
 
-    /* "code.pyx":20
+    /* "py/code.pyx":20
  *         for j in range(100000):              # 100k inner loop iterations, per outer loop iteration
  *             a[i] += j % u                    # Simple sum
  *         a[i] += r                            # Add a random value to each element in array             # <<<<<<<<<<<<<<
@@ -2573,7 +2573,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
     (__pyx_v_a[__pyx_t_4]) = ((__pyx_v_a[__pyx_t_4]) + __pyx_v_r);
   }
 
-  /* "code.pyx":22
+  /* "py/code.pyx":22
  *         a[i] += r                            # Add a random value to each element in array
  * 
  *     print(a[r])                              # Print out a single element from the array             # <<<<<<<<<<<<<<
@@ -2587,14 +2587,14 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "code.pyx":24
+  /* "py/code.pyx":24
  *     print(a[r])                              # Print out a single element from the array
  * 
  *     free(a)                                  # Free the allocated memory             # <<<<<<<<<<<<<<
  */
   free(__pyx_v_a);
 
-  /* "code.pyx":6
+  /* "py/code.pyx":6
  * from libc.stdlib cimport malloc, free
  * 
  * @cython.boundscheck(False)  # Disable bounds checking for performance             # <<<<<<<<<<<<<<
@@ -2608,7 +2608,7 @@ static PyObject *__pyx_pf_4code_main(CYTHON_UNUSED PyObject *__pyx_self, int __p
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("code.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("py.code.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2637,7 +2637,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_a, __pyx_k_a, sizeof(__pyx_k_a), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
-    {&__pyx_n_s_code, __pyx_k_code, sizeof(__pyx_k_code), 0, 0, 1, 1},
     {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
     {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
     {&__pyx_n_s_initializing, __pyx_k_initializing, sizeof(__pyx_k_initializing), 0, 0, 1, 1},
@@ -2647,6 +2646,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_main_2, __pyx_k_main_2, sizeof(__pyx_k_main_2), 0, 0, 1, 1},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
     {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
+    {&__pyx_n_s_py_code, __pyx_k_py_code, sizeof(__pyx_k_py_code), 0, 0, 1, 1},
     {&__pyx_kp_s_py_code_pyx, __pyx_k_py_code_pyx, sizeof(__pyx_k_py_code_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_r, __pyx_k_r, sizeof(__pyx_k_r), 0, 0, 1, 1},
     {&__pyx_n_s_randint, __pyx_k_randint, sizeof(__pyx_k_randint), 0, 0, 1, 1},
@@ -2674,7 +2674,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "code.pyx":9
+  /* "py/code.pyx":9
  * @cython.wraparound(False)    # Disable wraparound for performance
  * def main(int u):
  *     cdef int r = random.randint(0, 10000)  # Get a random number 0 <= r < 10k             # <<<<<<<<<<<<<<
@@ -2685,7 +2685,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "code.pyx":6
+  /* "py/code.pyx":6
  * from libc.stdlib cimport malloc, free
  * 
  * @cython.boundscheck(False)  # Disable bounds checking for performance             # <<<<<<<<<<<<<<
@@ -3033,14 +3033,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_code) {
+  if (__pyx_module_is_main_py__code) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "code")) {
-      if (unlikely((PyDict_SetItemString(modules, "code", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "py.code")) {
+      if (unlikely((PyDict_SetItemString(modules, "py.code", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -3061,7 +3061,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "code.pyx":1
+  /* "py/code.pyx":1
  * import sys             # <<<<<<<<<<<<<<
  * import random
  * cimport cython
@@ -3071,7 +3071,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "code.pyx":2
+  /* "py/code.pyx":2
  * import sys
  * import random             # <<<<<<<<<<<<<<
  * cimport cython
@@ -3082,19 +3082,19 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_2) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "code.pyx":6
+  /* "py/code.pyx":6
  * from libc.stdlib cimport malloc, free
  * 
  * @cython.boundscheck(False)  # Disable bounds checking for performance             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)    # Disable wraparound for performance
  * def main(int u):
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4code_1main, 0, __pyx_n_s_main_2, NULL, __pyx_n_s_code, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_2py_4code_1main, 0, __pyx_n_s_main_2, NULL, __pyx_n_s_py_code, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_2) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "code.pyx":1
+  /* "py/code.pyx":1
  * import sys             # <<<<<<<<<<<<<<
  * import random
  * cimport cython
@@ -3111,7 +3111,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init code", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init py.code", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -3125,7 +3125,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init code");
+    PyErr_SetString(PyExc_ImportError, "init py.code");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
