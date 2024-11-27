@@ -14,19 +14,15 @@ To run one of the benchmarks:
   You should see output something like:
   
   ```
-  $ bash ../run.sh                                                                                                                                                                   ✔ │ 7s │ 18:51:48 
-
-C = 0.70s
-C = 0.68s
-C = 0.65s
-
-Java = 0.88s
-Java = 0.80s
-Java = 0.72s
-
-Cython = 0.89s
-Cython = 0.74s
-Cython = 0.75s
+  $ bash ../run.sh
+  C = 0.77
+  Go = 2.07
+  Node = 0.79
+  Bun = 0.83
+  Deno = 1.13
+  PyPy = 1.61
+  Java = 0.64
+  Cython = 0.74s
   $
   ```
 
